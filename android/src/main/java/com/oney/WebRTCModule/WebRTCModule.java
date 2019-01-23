@@ -607,7 +607,7 @@ public class WebRTCModule extends ReactContextBaseJavaModule {
     }
 
     private void mediaStreamTrackSetEnabledAsync(String id, boolean enabled) {
-        MediaStreamTrack track = getLocalTrack(id);
+        MediaStreamTrack track = getTrack(id);
         if (track == null) {
             Log.d(TAG, "mediaStreamTrackSetEnabled() track is null");
             return;
